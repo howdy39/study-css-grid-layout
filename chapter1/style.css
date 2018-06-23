@@ -101,6 +101,22 @@ figure {
   font-size: 1.25em;
   line-height: 1.5;
   text-align: center;
+  quotes: '“' '”';
+  display: grid;
+  grid-auto-flow: column;
+  grid-column-gap: 5px;
+}
+.post-catch::before {
+  content: open-quote;
+}
+.post-catch::after{
+  content: close-quote;
+}
+.post-catch::before,
+.post-catch::after {
+  color: #aaa;
+  font-size: 2em;
+  font-weight: 900;
 }
 
 /*文章02*/
