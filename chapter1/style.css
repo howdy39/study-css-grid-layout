@@ -3,8 +3,16 @@ body {
   font-family: 'メイリオ', 'Hiragino Kaku Gothic Pro', 'sans-serif';
 }
 
-.post {
+figure {
   margin: 0;
+}
+
+.post {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  padding: 0 30px;
 }
 
 .post img {
